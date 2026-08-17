@@ -2,13 +2,45 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Мой первый сайт</title>
+    <title>Кликер Игра</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Ура, я программирую на ПК!</h1>
-    <p>VPN работает, код пишется.</p>
-    <button id="myButton">Нажми на меня</button>
+    <audio id="backgroundMusic" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио.
+    </audio>
+    
+    <div class="clock" id="clock">00:00:00</div>
+    
+    <div class="container">
+        <h1>🎮 Кликер Игра</h1>
+        
+        <div class="stats">
+            <div class="stat-box">
+                <span class="stat-label">Очки:</span>
+                <span id="score" class="stat-value">0</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">Сила клика:</span>
+                <span id="clickPower" class="stat-value">1</span>
+            </div>
+        </div>
+
+        <button id="clickButton" class="click-button">👆 КЛИКАЙ!</button>
+
+        <div class="controls">
+            <button id="upgradeButton" class="upgrade-button">
+                ⬆️ Улучшить (10 очков)
+            </button>
+            <button id="resetButton" class="reset-button">
+                🔄 Сброс
+            </button>
+            <button id="musicButton" class="music-button">
+                🎵 Музыка
+            </button>
+        </div>
+    </div>
 <script src="script.js"></script>
 </body>
 </html>
