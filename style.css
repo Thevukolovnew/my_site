@@ -1,0 +1,31 @@
+body {
+    background-color: #1e1e2e; /* Делаем фон темно-фиолетовым */
+    color: #cdd6f4;            /* Делаем текст светло-серым */
+    font-family: sans-serif;   /* Меняем шрифт на современный без засечек */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;       /* Эти три строки выравнивают текст ровно по центру */
+    height: 100vh;             /* Растягиваем страницу на всю высоту экрана */
+    margin: 0;
+}
+
+h1 {
+    color: #f5c2e7;            /* Делаем заголовок красивого розового цвета */
+    font-size: 3rem;           /* Увеличиваем размер заголовка */
+}
+button {
+    background-color: #f5c2e7; /* Розовый фон кнопки */
+    color: #1e1e2e;            /* Темный текст внутри */
+    border: none;              /* Убираем стандартную рамку */
+    padding: 12px 24px;        /* Делаем внутренние отступы (размер кнопки) */
+    font-size: 1rem;           /* Размер шрифта */
+    border-radius: 8px;        /* Скругляем углы */
+    cursor: pointer;           /* Меняем курсор мыши при наведении на пальчик */
+    margin-top: 20px;          /* Отступ сверху от текста */
+    transition: 0.2s;          /* Плавная анимация */
+}
+
+button:hover {
+    background-color: #b4befe; /* Цвет кнопки плавно изменится на сиреневый при наведении */
+}
